@@ -1,0 +1,45 @@
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+a,
+.url,
+.swagger-ui .info a {
+  color: #0f7661;
+}
+
+.body-content {
+  padding-top: 10px;
+}
+
+.response-col_status {
+  width: unset;
+}
+
+.scheme-container {
+  display: none;
+}
+
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+  background: #0170df;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+  background: #227751;
+}
+
+.swagger-ui-svg {
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.parameters-col_name {
+  width: 20%;
+}

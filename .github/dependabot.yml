@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "05:30"
+    timezone: Europe/London
+  reviewers:
+    - "martincostello"
+- package-ecosystem: npm
+  directory: "/src/API"
+  schedule:
+    interval: daily
+    time: "05:30"
+    timezone: Europe/London
+  reviewers:
+    - "martincostello"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: gulp-jasmine
+    versions:
+    - ">= 4.a, < 5"
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "05:30"
+    timezone: Europe/London
+  reviewers:
+    - "martincostello"
+  open-pull-requests-limit: 99

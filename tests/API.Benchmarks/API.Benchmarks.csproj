@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Benchmarks for the API.</Description>
+    <NoWarn>$(NoWarn);CA2007;CA2234;SA1600</NoWarn>
+    <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MartinCostello.API.Benchmarks</RootNamespace>
+    <Summary>$(Description)</Summary>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\API\API.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="BenchmarkDotNet" />
+  </ItemGroup>
+</Project>
